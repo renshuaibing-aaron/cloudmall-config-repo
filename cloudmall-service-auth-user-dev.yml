@@ -14,7 +14,7 @@ mybatis:
     map-underscore-to-camel-case: true
 
 mapper:
-  mappers: com.paascloud.core.mybatis.MyMapper
+  mappers: com.aaron.ren.cloudmall.authuser.mapper.MyMapper
   not-empty: false
   identity: MYSQL
 
