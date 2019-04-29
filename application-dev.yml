@@ -77,8 +77,8 @@ feign:
   client:
     config:
       default:
-        connectTimeout: 5000
-        readTimeout: 5000
+        connectTimeout: 50000
+        readTimeout: 50000
 
 ribbon:
   eager-load:
@@ -86,8 +86,8 @@ ribbon:
   MaxAutoRetries: 1
   MaxAutoRetriesNextServer: 2
   OkToRetryOnAllOperations: false
-  ConnectTimeout: 60000
-  ReadTimeout: 20000
+  ConnectTimeout: 600000
+  ReadTimeout: 200000
 
 hystrix:
   command:
@@ -97,7 +97,7 @@ hystrix:
           enabled: true
         isolation:
           thread:
-            timeoutInMilliseconds: 20000
+            timeoutInMilliseconds: 200000
 
 info:
   软件著作权: paascloud快速搭建企业级分布式微服务平台
